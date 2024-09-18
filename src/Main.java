@@ -23,8 +23,13 @@ public class Main {
                 System.out.println("Результат: " + res );
                 break;
             case "/":
-                res = num / num1;
-                System.out.println("Результат: " + res );
+                if(num1 == 0) {
+                    System.out.println("На ноль делить нельзя");
+                }
+                else {
+                    res = num / num1;
+                    System.out.println("Результат: " + res);
+                }
                 break;
             case "*":
                 res = num * num1;
